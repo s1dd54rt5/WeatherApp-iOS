@@ -318,6 +318,7 @@
 				DEVELOPMENT_TEAM = 8ZR53HT92S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Aatanki Weather";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Give permission for weather";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Give permission to access temperature";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Give permission for weather";
@@ -349,6 +350,7 @@
 				DEVELOPMENT_TEAM = 8ZR53HT92S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Aatanki Weather";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Give permission for weather";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Give permission to access temperature";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Give permission for weather";
