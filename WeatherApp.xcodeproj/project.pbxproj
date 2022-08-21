@@ -13,6 +13,7 @@
 		BFB7DEF028B1515200D84251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB7DEEE28B1515200D84251 /* Main.storyboard */; };
 		BFB7DEF228B1515400D84251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB7DEF128B1515400D84251 /* Assets.xcassets */; };
 		BFB7DEF528B1515400D84251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB7DEF328B1515400D84251 /* LaunchScreen.storyboard */; };
+		BFB7DEFD28B1544300D84251 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7DEFC28B1544300D84251 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BFB7DEF128B1515400D84251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB7DEF428B1515400D84251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFB7DEF628B1515400D84251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB7DEFC28B1544300D84251 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				BFB7DEE828B1515200D84251 /* AppDelegate.swift */,
 				BFB7DEEA28B1515200D84251 /* SceneDelegate.swift */,
-				BFB7DEEC28B1515200D84251 /* ViewController.swift */,
-				BFB7DEEE28B1515200D84251 /* Main.storyboard */,
+				BFD23DA428B1ED5600D93F6B /* Model */,
+				BFD23DA328B1ED4700D93F6B /* View */,
+				BFD23DA528B1ED6300D93F6B /* Controller */,
 				BFB7DEF128B1515400D84251 /* Assets.xcassets */,
 				BFB7DEF328B1515400D84251 /* LaunchScreen.storyboard */,
 				BFB7DEF628B1515400D84251 /* Info.plist */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		BFD23DA328B1ED4700D93F6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFB7DEEE28B1515200D84251 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFD23DA428B1ED5600D93F6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFB7DEFC28B1544300D84251 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFD23DA528B1ED6300D93F6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFB7DEEC28B1515200D84251 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB7DEFD28B1544300D84251 /* Weather.swift in Sources */,
 				BFB7DEED28B1515200D84251 /* ViewController.swift in Sources */,
 				BFB7DEE928B1515200D84251 /* AppDelegate.swift in Sources */,
 				BFB7DEEB28B1515200D84251 /* SceneDelegate.swift in Sources */,
@@ -290,6 +318,9 @@
 				DEVELOPMENT_TEAM = 8ZR53HT92S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Give permission for weather";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Give permission to access temperature";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Give permission for weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +349,9 @@
 				DEVELOPMENT_TEAM = 8ZR53HT92S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Give permission for weather";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Give permission to access temperature";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Give permission for weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
